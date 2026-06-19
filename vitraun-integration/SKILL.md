@@ -101,7 +101,7 @@ Before improvising APIs, **read the matching quickstart** and mirror its pattern
 
 ## Prompt template
 
-For ad-hoc sessions outside Cursor, copy from [prompt-template.md](prompt-template.md).
+For ad-hoc sessions in harnesses without Agent Skills, copy from [prompt-template.md](prompt-template.md).
 
 ## Additional reference
 

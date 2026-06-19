@@ -13,16 +13,38 @@ Public [Agent Skills](https://agentskills.io/) for integrating **Vitraun Virtual
 
 ## Install with the Skills CLI
 
-From any project directory:
+From any project directory. Replace `<agent>` with your harness slug — run `npx skills ls` for the full list (70+ agents):
 
 ```bash
+npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -y
+```
+
+Common examples:
+
+```bash
+# Cursor
 npx skills add clagils/agent-skills --skill vitraun-integration --agent cursor -y
+
+# Claude Code
+npx skills add clagils/agent-skills --skill vitraun-integration --agent claude-code -y
+
+# Codex
+npx skills add clagils/agent-skills --skill vitraun-integration --agent codex -y
+
+# GitHub Copilot
+npx skills add clagils/agent-skills --skill vitraun-integration --agent github-copilot -y
 ```
 
 Install globally (all projects on your machine):
 
 ```bash
-npx skills add clagils/agent-skills --skill vitraun-integration --agent cursor -g -y
+npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -g -y
+```
+
+Multiple agents at once:
+
+```bash
+npx skills add clagils/agent-skills --skill vitraun-integration -a cursor -a claude-code -a codex -y
 ```
 
 List skills in this repository without installing:
@@ -34,8 +56,10 @@ npx skills add clagils/agent-skills --list
 Install from Git SSH:
 
 ```bash
-npx skills add git@github.com:clagils/agent-skills.git --skill vitraun-integration --agent cursor -y
+npx skills add git@github.com:clagils/agent-skills.git --skill vitraun-integration --agent <agent> -y
 ```
+
+Full install guide: https://docs.vitraun.com/en-US/development/llm-integration/install-skill
 
 ## Sync from the Vitraun monorepo
 

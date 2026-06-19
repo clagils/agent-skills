@@ -37,10 +37,12 @@ Detailed docs:
 - Events: https://docs.vitraun.com/en-US/development/widget-api/events
 ```
 
-## Cursor users
+## Coding agent users
 
-Install the official agent skill instead of pasting the prompt:
+Install the official agent skill instead of pasting the prompt. Replace `<agent>` with your harness (`cursor`, `claude-code`, `codex`, `github-copilot`, etc.):
 
 ```bash
-npx skills add clagils/agent-skills --skill vitraun-integration --agent cursor -y
+npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -y
 ```
+
+Install guide: https://docs.vitraun.com/en-US/development/llm-integration/install-skill

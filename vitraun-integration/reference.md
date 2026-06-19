@@ -25,25 +25,43 @@
 
 https://docs.vitraun.com/llms.txt
 
-## Install this skill (Cursor)
+## Install this skill (coding agents)
+
+Full guide: https://docs.vitraun.com/en-US/development/llm-integration/install-skill
 
 Public repository: https://github.com/clagils/agent-skills
 
+List supported harnesses:
+
 ```bash
-npx skills add clagils/agent-skills --skill vitraun-integration --agent cursor -y
+npx skills ls
+```
+
+Replace `<agent>` with your harness slug (`cursor`, `claude-code`, `codex`, `github-copilot`, `opencode`, etc.):
+
+```bash
+npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -y
 ```
 
 Global install:
 
 ```bash
-npx skills add clagils/agent-skills --skill vitraun-integration --agent cursor -g -y
+npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -g -y
+```
+
+Multiple agents:
+
+```bash
+npx skills add clagils/agent-skills --skill vitraun-integration -a cursor -a claude-code -a codex -y
 ```
 
 Git SSH:
 
 ```bash
-npx skills add git@github.com:clagils/agent-skills.git --skill vitraun-integration --agent cursor -y
+npx skills add git@github.com:clagils/agent-skills.git --skill vitraun-integration --agent <agent> -y
 ```
+
+Harnesses without Agent Skills: use [prompt-template.md](./prompt-template.md) or `npx skills use clagils/agent-skills --skill vitraun-integration`.
 
 ## GitHub quickstart repositories
 
