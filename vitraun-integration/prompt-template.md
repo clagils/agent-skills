@@ -1,15 +1,16 @@
 # Vitraun VTO — prompt template
 
-Copy the block below into any LLM session (ChatGPT, Claude, Copilot, etc.).
+Copy the block below into any LLM session (ChatGPT, Claude, Copilot, etc.). **The prompt is entirely in English** — use it as-is regardless of your UI locale.
 
 ```text
 Integrate Vitraun VTO following the official documentation.
 
 Context:
-- Web package: @vitraun/webar (same package for HTML and React)
+- Web package: @vitraun/webar (pin semver; same package for HTML and React)
 - Widget: custom element <vitraun-vto>
-- AI guide: https://docs.vitraun.com/en-US/development/llm-integration-guide
+- Docs: https://docs.vitraun.com/en-US/development/llm-integration-guide
 - llms.txt: https://docs.vitraun.com/llms.txt
+- Agent skill: npx skills add clagils/agent-skills --skill vitraun-integration --agent <agent> -y (see install guide)
 
 Before coding, decide:
 1. Plain HTML / e-commerce theme → CDN or <script> (HTML guide)
@@ -35,6 +36,8 @@ Detailed docs:
 - HTML: https://docs.vitraun.com/en-US/development/integration/html
 - React: https://docs.vitraun.com/en-US/development/integration/react
 - Events: https://docs.vitraun.com/en-US/development/widget-api/events
+
+Agent skill repository: https://github.com/clagils/agent-skills
 ```
 
 ## Coding agent users

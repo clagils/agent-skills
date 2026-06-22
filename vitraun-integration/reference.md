@@ -63,6 +63,22 @@ npx skills add git@github.com:clagils/agent-skills.git --skill vitraun-integrati
 
 Harnesses without Agent Skills: use [prompt-template.md](./prompt-template.md) or `npx skills use clagils/agent-skills --skill vitraun-integration`.
 
+## Getting started after install
+
+Full walkthrough: https://docs.vitraun.com/en-US/development/llm-integration/install-skill
+
+1. Copy **merchant-id** and **widget-id** from the Vitraun Integrations panel.
+2. Open your storefront project in the coding agent.
+3. Ask in chat (example):
+
+```text
+Integrate Vitraun VTO on my product page using HTML and CDN.
+Use merchant-id and widget-id from environment variables.
+Follow the official quickstart and open the widget on "Try on" button click.
+```
+
+4. Validate with the checklist below before go-live.
+
 ## GitHub quickstart repositories
 
 | Folder / repo slug | Stack |
